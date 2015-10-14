@@ -18,5 +18,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^$', 'home.views.index', name='home'),
+    url(r'^$', 'home.views.ccpa', name='home'),
     url(r'^admin/', include(admin.site.urls)),
 ]

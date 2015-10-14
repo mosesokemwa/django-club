@@ -1,13 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>djangoproject</title>
-  </head>
-  <body>
-    <p>
-      Hello world this is my djangoproject
-    </p>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Ceaser Cipher</title>
+</head>
+
+<body>
+  <h2>Ceaser Cipher</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+
+      <form method="POST" accept-charset="utf-8">
+        {%csrf_token%} {{ form.as_p }}
+        <input type="submit" value="Submit">
+      </form>
+      <p>Ciphered text</p>
+      <h3>{{ping}}</h3>
+
+    </div>
+    <!--./col-md-6-->
+  </div>
+
+</body>
+
 </html>
